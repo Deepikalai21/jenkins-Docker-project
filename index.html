@@ -1,14 +1,216 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins Docker Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My DevOps Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>
-        hiiiiiiiiiiiiiiiiiiiiiiiiii
-    </h1>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
 
-    <p>jenkins</p>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hello, I'm <span>Deepika</span></h1>
+
+            <h2>AWS & DevOps Enthusiast</h2>
+
+            <p>
+                I am learning AWS and DevOps technologies and building
+                practical projects to develop my skills in cloud computing,
+                automation and deployment.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+
+        <h2>About Me</h2>
+
+        <div class="about-content">
+            <p>
+                I am an aspiring AWS and DevOps professional interested in
+                cloud computing, automation, CI/CD and infrastructure
+                management.
+            </p>
+
+            <p>
+                I have been learning AWS, Linux, Git, GitHub, Docker and
+                other DevOps tools through hands-on projects.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>AWS</h3>
+                <p>EC2, VPC, IAM, S3 and cloud services</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Linux</h3>
+                <p>Linux commands, administration and server management</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <p>Version control and source code management</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Docker</h3>
+                <p>Containers, images and application deployment</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Jenkins</h3>
+                <p>CI/CD pipeline automation</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Basic Python application development</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>DevOps Portfolio</h3>
+
+                <p>
+                    A responsive personal portfolio website created using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <button onclick="showProject('DevOps Portfolio')">
+                    View Details
+                </button>
+            </div>
+
+            <div class="project-card">
+                <h3>Python To-Do Application</h3>
+
+                <p>
+                    A beginner-friendly Python To-Do application prepared
+                    for Docker containerization and deployment.
+                </p>
+
+                <button onclick="showProject('Python To-Do Application')">
+                    View Details
+                </button>
+            </div>
+
+            <div class="project-card">
+                <h3>AWS VPC Project</h3>
+
+                <p>
+                    A cloud networking project demonstrating AWS VPC,
+                    subnets, routing and security concepts.
+                </p>
+
+                <button onclick="showProject('AWS VPC Project')">
+                    View Details
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="5"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Deepika | AWS & DevOps Portfolio
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
